@@ -4,7 +4,7 @@ import { CurrentLocation } from './currentLocation';
 
 export function Navigation() {
 	return (
-		<div className='bg-red-500 fixed top-0 w-full z-50'>
+		<div className='fixed top-0 w-full z-50 bg-background'>
 			<header
 				className=' max-w-[90.625rem] m-auto flex items-center xl:justify-between 
       gap-2 sm:gap-4 p-4'>

@@ -8,7 +8,6 @@ export function SearchContent() {
 	const { SearchContentVariant } = animationHeader();
   const {searchQuery}=useContext(SearchContext)
   const { weathers } = useSearchLocation(searchQuery);
-
 	return (
 		<>
 			<motion.section
@@ -29,8 +28,7 @@ export function SearchContent() {
 						)
 					) : (
 						<h1 className='px-4 text-onSurface'>
-							No relevant search results
-							found.
+							No relevant search results found.
 						</h1>
 					)}
 				</motion.ul>
