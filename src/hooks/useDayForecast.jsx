@@ -6,13 +6,12 @@ export function useDayForecast() {
   const [forecastsData, setForecastsData] = useState([]);
   const [hoursForecastData, setHourForecastData] = useState([]);
 
-  const {
-    location: { lat, lon },
-  } = useContext(LocationContext);
+  const {location} = useContext(LocationContext);
+  const lat=location?.lat;
+  const lon=location?.lon;
   useEffect(() => {
     const fetchData = async () => {
       try {
-    
         const forecast = await getWeather(optionsRequest.dayForecast(lat, lon));
         setForecastsData(
           forecast.list?.filter((element, index) => index % 8 === 0),

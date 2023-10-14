@@ -28,7 +28,13 @@ export function Search() {
 					className='rounded-radiusCircle bg-surface text-onSurface p-2 sm:p-4 block xl:hidden'>
 					<SearchIcon className='w-6 h-6' />
 				</button>
-
+				<div
+								onClick={() => toggleOpen()}
+								className={`${
+									open
+										? 'block'
+										: 'hidden'
+								} inset-0 fixed bg-black bg-opacity-80 xl:hidden`}></div>
 				<motion.div
 					variants={DropMediumVariant}
 					initial='hidden'
@@ -54,6 +60,7 @@ export function Search() {
 									<SearchIcon className='w-5 h-5 ' />
 								)}
 							</button>
+
 							<input
 								className='placeholder-onSurfaceVariant2 py-4 outline-none  w-full pl-11 pr-4 bg-surface'
 								type='text'
@@ -81,7 +88,7 @@ export function Search() {
 								open ? 'open' : 'closed'
 							}
 							className={`${
-								open ? 'block' : 'hidden'
+								open ? 'block ' : 'hidden'
 							}`}>
 							<SearchContent />
 						</motion.section>

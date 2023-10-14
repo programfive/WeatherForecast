@@ -13,7 +13,7 @@ export function TodayATCard({ hourForecast }) {
     <section className="flex flex-col gap-4 text-xl text-onSurface">
       <Card className="rounded-lg  px-6 flex flex-col items-center text-center gap-2">
         <p>{hour}</p>
-        <img src={`/images/weather_icons/${icon}.png`} className="w-10 h-10" />
+        <img src={`images/weather_icons/${icon}.png`} className="w-10 h-10" />
 
         <p>{parseInt(temp)}°</p>
       </Card>
@@ -23,7 +23,7 @@ export function TodayATCard({ hourForecast }) {
         <img
           style={{ transform: `rotate(${deg - 180}deg)` }}
           className="w-10 h-10"
-          src="/images/weather_icons/direction.png"
+          src="images/weather_icons/direction.png"
           alt="Direction Icon"
         />
 

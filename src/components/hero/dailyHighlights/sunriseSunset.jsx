@@ -19,7 +19,7 @@ export function SunriseSunset({ weatherData }) {
 							<p className=' xl:text-lg xl:mb-2'>
 								Sunrise
 							</p>
-							<p className='text-white text-xl font-semiBold xl:text- body2'>
+							<p className='text-white text-xl font-semiBold xl:text-body2'>
 								{formatUnixTime(sunrise)}
 							</p>
 						</div>
@@ -30,7 +30,7 @@ export function SunriseSunset({ weatherData }) {
 							<p className=' xl:text-lg xl:mb-2'>
 								Sunset
 							</p>
-							<p className='text-white text-xl font-semiBold xl:text- body2'>
+							<p className='text-white text-xl font-semiBold xl:text-body2'>
 								{formatUnixTime(sunset)}
 							</p>
 						</div>

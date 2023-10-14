@@ -1,12 +1,21 @@
 import { motion } from 'framer-motion';
 import { CurrentLocationIcon } from '../icons/currentLocationIcon';
 import { animationHeader } from '../../animation/header';
-
+import { LocationContext } from "../../context/location";
+import { geolocation } from "../../helpers/geolocation";
+import { useContext } from 'react';
 export function CurrentLocation() {
 	const {buttonVariants}=animationHeader()
+	const {setLocation}=useContext(LocationContext)
+  const currentLocation =()=>{
+    geolocation((result) => {
+      setLocation(result);
+    });
+  }
 	return (
 		<>
 			<motion.button
+				onClick={currentLocation}
 				variants={buttonVariants}
 				whileHover='hover'
 				whileTap='tap'

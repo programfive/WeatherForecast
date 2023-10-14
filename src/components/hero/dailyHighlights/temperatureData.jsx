@@ -22,7 +22,7 @@ export function TemperatureData({ weatherData }) {
 					</h2>
 					<div className='flex justify-between items-center'>
 						<HumidityIcon className='w-10 h-10 text-onSurface ' />
-						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body-2 sm:text-white '>
+						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body2 sm:text-white '>
 							{humidity}%
 						</p>
 					</div>
@@ -34,7 +34,7 @@ export function TemperatureData({ weatherData }) {
 					</h2>
 					<div className='flex justify-between items-center'>
 						<PressureIcon className='w-10 h-10  text-onSurface ' />
-						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body-2 sm:text-white '>
+						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body2 sm:text-white '>
 							{formatPressure(pressure)}
 						</p>
 					</div>
@@ -46,7 +46,7 @@ export function TemperatureData({ weatherData }) {
 					</h2>
 					<div className='flex justify-between items-center'>
 						<ViewIcon className='w-10 h-10  text-onSurface' />
-						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body-2 sm:text-white '>
+						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body2 sm:text-white '>
 							{formatVisibility(
 								weatherData?.visibility,
 							)}
@@ -61,7 +61,7 @@ export function TemperatureData({ weatherData }) {
 					</h2>
 					<div className='flex justify-between items-center'>
 						<TemperatureIcon className='w-10 h-10  text-onSurface ' />
-						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body-2 sm:text-white '>
+						<p className='text-xl font-semibold text-onSurfaceVariant2 md:text-body2 sm:text-white '>
 							{parseInt(feels_like)}
 							°C
 						</p>
